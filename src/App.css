@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  margin: 0 auto;
+  border: 2px solid #333;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.square.white {
+  background-color: #fff;
+  color: #333;
+}
+
+.square.black {
+  background-color: #333;
+  color: #fff;
+}
+
+.piece {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.piece img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.piece {
+  background-repeat: round;
+}
+
+.piece.white.pawn {
+  background-image: url('white-pawn.png');
+}
+
+.piece.white.rook {
+  background-image: url('white-rook.png');
+}
+
+.piece.white.knight {
+  background-image: url('white-knight.png');
+}
+
+.piece.white.bishop {
+  background-image: url('white-bishop.png');
+}
+
+.piece.white.queen {
+  background-image: url('white-queen.png');
+}
+
+.piece.white.king {
+  background-image: url('white-king.png');
+}
+
+.piece.black.pawn {
+  background-image: url('black-pawn.png');
+}
+
+.piece.black.rook {
+  background-image: url('black-rook.png');
+}
+
+.piece.black.knight {
+  background-image: url('black-knight.png');
+}
+
+.piece.black.bishop {
+  background-image: url('black-bishop.png');
+}
+
+.piece.black.queen {
+  background-image: url('black-queen.png');
+}
+
+.piece.black.king {
+  background-image: url('black-king.png');
+}
